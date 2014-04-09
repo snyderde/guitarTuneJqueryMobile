@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+    <widget xmlns = "http://www.w3.org/ns/widgets"
+        xmlns:gap = "http://phonegap.com/ns/1.0"
+        id        = "com.evan.chrisWhitleyJQM-Phonegapp"
+        versionCode="10"
+        version = "1.0.1">
+
+
+    <name>Chris Whitley Tunings</name>
+
+    <description>
+        This is a Chris whitley guitar tuner App.
+    </description>
+
+    <author href="https://devworkshop.org" email="evan.snyder@stageninja.com">
+        Daniel Evan Snyder Basic Config xml
+    </author>
+
+    <icon src="icon.png" />
+
+    <access uri="*" subdomains="true" />
+    <access origin="*" subdomains="true" />
+
+
+</widget>
