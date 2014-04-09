@@ -1,0 +1,1242 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>jQuery Mobile: Theme Download</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" href="themes/tunerApp.min.css" />
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile.structure-1.3.2.min.css" />
+		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
+	</head>
+	<body>
+		<!-- page 1 -->
+		<div data-role="page" data-theme="a" id="homePage">
+			<div data-role="header" data-position="inline">
+				<h1>Chris Whitley<br />Tunings</h1>
+			</div>
+			<div data-role="navbar">
+    			<ul>
+        			<li><a href="#homePage" class="ui-btn-active">Home</a></li>
+        			<li><a href="#songPage">Song List</a></li>
+        			<li><a href="#aboutPage">About</a></li>
+    			</ul>
+			</div><!-- /navbar -->
+			<div data-role="content" data-theme="a">
+				
+					<img src="assets/Chris_Whitley_(musician).jpg" alt="image of chris">
+			
+			</div>
+			<div data-theme="a" data-role="footer" data-position="fixed">
+        		<h3>
+            		Dust Mobile &copy; 2014
+        		</h3>
+    		</div>
+		</div>
+		<!-- page 2 stuff -->
+		<div data-role="page" data-theme="a" id="songPage">
+			<div data-role="header" data-position="inline">
+				<h1>Chris Whitley<br />Song List</h1>
+			</div>
+			<div data-role="navbar">
+    			<ul>
+        			<li><a href="#homePage">Home</a></li>
+        			<li><a href="#songPage" class="ui-btn-active">Song List</a></li>
+        			<li><a href="#aboutPage">About</a></li>
+    			</ul>
+			</div><!-- /navbar -->
+			<div data-role="content" data-theme="a">
+				<ul data-role="listview" data-filter="true" data-filter-placeholder="Search Songs..." data-inset="true">
+    				<li><a href="#acc">Accordingly</a></li>
+    				<li><a href="#aer">Aerial</a></li>
+    				<li><a href="#alt">Altitude</a></li>
+    				<li><a href="#asf">As Flat as the Earth</a></li>
+    				<li><a href="#aut">Automatic</a></li>
+    				<!-- <li><a href="#">Ball Peen Hammer</a></li> -->
+    				<li><a href="#big">Big Sky of Country</a></li>
+    				<li><a href="#bli">Bliss to Break</a></li>
+    				<li><a href="#bor">Border Town</a></li>
+    				<li><a href="#can">Can't Get Off</a></li>
+    				<li><a href="#cle">Clear Blue Sky</a></li>
+    				<li><a href="#com">Complex Sex Ritual</a></li>
+    				<li><a href="#coo">Cool Wooden Crosses</a></li>
+    				<!-- <li><a href="#">Das Model</a></li> -->
+    				<li><a href="#day">Days of Obligation</a></li>
+    				<li><a href="#die">Die in Your</a></li>
+    				<li><a href="#din">Din</a></li>
+    				<li><a href="#dir">Dirt Floor</a></li>
+    				<li><a href="#dus">Dust Radio</a></li>
+    				<li><a href="#fir">Firefighter</a></li>
+    				<li><a href="#fla">Flat as the</a></li>
+    				<li><a href="#fro">From One Island to Another</a></li>
+    				<li><a href="#gas">Gasket</a></li>
+    				<li><a href="#god">God Thing</a></li>
+    				<li><a href="#gun">Guns and Dolls</a></li>
+    				<li><a href="#hom">Home is Where You Get Across</a></li>
+    				<li><a href="#ifo">I forget You Everyday</a></li>
+    				<li><a href="#imm">Immortal Blues</a></li>
+    				<li><a href="#ind">Indian Summer</a></li>
+    				<li><a href="#kic">Kick the Stones</a></li>
+    				<li><a href="#kno">Know</a></li>
+    				<li><a href="#lib">Liberation</a></li>
+    				<li><a href="#liv">Living With the Law</a></li>
+    				<li><a href="#loc">Loco Girl</a></li>
+    				<li><a href="#lon">Long Way Around</a></li>
+    				<li><a href="#nar">Narcotic Prayer</a></li>
+    				<li><a href="#nev">Never</a></li>
+    				<li><a href="#new">New Machine</a></li>
+    				<li><a href="#ohg">Oh God, My Heart Is Ready</a></li>
+    				<li><a href="#onc">On Cue</a></li>
+    				<li><a href="#one">One Long Day</a></li>
+    				<li><a href="#pho">Phonecall From Leavenworth</a></li>
+    				<li><a href="#poi">Poison Girl</a></li>
+    				<li><a href="#pow">Power Down</a></li>
+    				<li><a href="#scr">Scrapyard Lullaby</a></li>
+    				<li><a href="#ser">Serve You</a></li>
+    				<li><a href="#som">Some Candy Talking</a></li>
+    				<!-- <li><a href="#">Stillpoint of the Moving World</a></li> -->
+    				<li><a href="#ult">Ultraglide</a></li>
+    				<li><a href="#wei">Weightless</a></li>
+    				<li><a href="#wil">Wild Country</a></li>
+    				<li><a href="#wpl">WPL (Wild Pagan Love)</a></li>
+					</ul>
+					<audio id="aud">
+  <source src="tuneNotes/.ogg" type="audio/ogg">
+  <source id='ogg' src="tuneNotes/.mp3" type="audio/mpeg">
+
+  Your browser does not support the audio tag.
+</audio>  
+			</div>
+			<div data-theme="a" data-role="footer" data-position="fixed">
+        		<h3>
+            		Dust Mobile &copy; 2014
+        		</h3>
+    		</div>
+		</div>
+		<!-- page 3 -->
+		<div data-role="page" data-theme="a" id="aboutPage">
+			<div data-role="header" data-position="inline">
+				<h1>About<br />Chris Whitley</h1>
+			</div>
+			<div data-role="navbar">
+    			<ul>
+        			<li><a href="#homePage">Home</a></li>
+        			<li><a href="#songPage">Song List</a></li>
+        			<li><a href="#aboutPage" class="ui-btn-active">About</a></li>
+    			</ul>
+			</div><!-- /navbar -->
+			<div data-role="content" data-theme="a">
+			<div id="about">
+			<ul>
+			<li><a href="https://www.facebook.com/groups/allthingschriswhitley/" target="_blank">All Things Chris Whitley, Facebook Group</a><br><br></li>
+			<li><a href="https://www.youtube.com/user/katie54765?feature=g-high-crv" target="_blank">The best videos of Chris can be found here.</a><br><br></li>
+			<li><a href="https://www.youtube.com/user/rustradio" target="_blank">This man has his songs nailed, watch for a lesson.</a><br><br></li>
+			<li><a href="http://www.dustradiomovie.com/" target="_blank">Stay informed or donate to the movie about Chris.</a><br><br></li>
+			<li><a href="http://www.chriswhitley.com/" target="_blank">Official Memorial Website</a></li>
+			</ul>
+			</div>	
+			</div>
+			<div data-theme="a" data-role="footer" data-position="fixed">
+        		<h3>
+            		Dust Mobile &copy; 2014
+        		</h3>
+    		</div>
+		</div>
+		<!-- song views start -->
+		<!-- accordingly -->
+		<div data-role="page" data-theme="a" id="acc">
+			<div data-role="header" data-position="inline">
+				<h1>Chris Whitley<br />Accordingly</h1>
+			</div>
+			<div data-role="navbar">
+    			<ul>
+        			<li><a href="#homePage">Home</a></li>
+        			<li><a href="#songPage">Song List</a></li>
+        			<li><a href="#aboutPage">About</a></li>
+    			</ul>
+			</div><!-- /navbar -->
+			<div data-role="content" data-theme="a">
+				
+					<img src="assets/chrisPlay.jpg" alt="image of chris">
+			<!-- <input id="A1" type="button" value="Play" /> -->
+			 <!-- <button data-role="button" id="D#1">D#1</button>
+			<button data-role="button" id="G#1">G#1</button>
+			<button data-role="button" id="D#2">D#2</button>
+			<button data-role="button" id="G#2">G#2</button>
+			<button data-role="button" id="A#3">A#3</button>
+			<button data-role="button" id="D#3">D#3</button> -->
+			<!-- <audio id="aud">
+  <source src="tuneNotes/.ogg" type="audio/ogg">
+  <source id='ogg' src="tuneNotes/.mp3" type="audio/mpeg">
+
+  Your browser does not support the audio tag.
+</audio>   -->
+
+			</div>
+			<div data-theme="a" data-role="footer" data-position="fixed">
+        		<h3>
+            		Dust Mobile &copy; 2014
+        		</h3>
+    		</div>
+		</div>
+		<div data-role="page" data-theme="a" id="aer">
+			<div data-role="header" data-position="inline">
+				<h1>Chris Whitley<br />Aerial</h1>
+			</div>
+			<div data-role="navbar">
+    			<ul>
+        			<li><a href="#homePage">Home</a></li>
+        			<li><a href="#songPage">Song List</a></li>
+        			<li><a href="#aboutPage">About</a></li>
+    			</ul>
+			</div><!-- /navbar -->
+			<div data-role="content" data-theme="a">
+				
+					<img src="assets/chrisPlay.jpg" alt="image of chris">
+			
+			</div>
+			<div data-theme="a" data-role="footer" data-position="fixed">
+        		<h3>
+            		Dust Mobile &copy; 2014
+        		</h3>
+    		</div>
+		</div>
+		<div data-role="page" data-theme="a" id="alt">
+			<div data-role="header" data-position="inline">
+				<h1>Chris Whitley<br />Altitude 1</h1>
+			</div>
+			<div data-role="navbar">
+    			<ul>
+        			<li><a href="#homePage">Home</a></li>
+        			<li><a href="#songPage">Song List</a></li>
+        			<li><a href="#aboutPage">About</a></li>
+    			</ul>
+			</div><!-- /navbar -->
+			<div data-role="content" data-theme="a">
+				
+					<img src="assets/chrisPlay.jpg" alt="image of chris">
+			
+			</div>
+			<div data-theme="a" data-role="footer" data-position="fixed">
+        		<h3>
+            		Dust Mobile &copy; 2014
+        		</h3>
+    		</div>
+		</div>
+		<div data-role="page" data-theme="a" id="asf">
+			<div data-role="header" data-position="inline">
+				<h1>Chris Whitley<br />As Flat as the Earth</h1>
+			</div>
+			<div data-role="navbar">
+    			<ul>
+        			<li><a href="#homePage">Home</a></li>
+        			<li><a href="#songPage">Song List</a></li>
+        			<li><a href="#aboutPage">About</a></li>
+    			</ul>
+			</div><!-- /navbar -->
+			<div data-role="content" data-theme="a">
+				
+					<img src="assets/chrisPlay.jpg" alt="image of chris">
+			
+			</div>
+			<div data-theme="a" data-role="footer" data-position="fixed">
+        		<h3>
+            		Dust Mobile &copy; 2014
+        		</h3>
+    		</div>
+		</div>
+		<div data-role="page" data-theme="a" id="aut">
+			<div data-role="header" data-position="inline">
+				<h1>Chris Whitley<br />Automatic</h1>
+			</div>
+			<div data-role="navbar">
+    			<ul>
+        			<li><a href="#homePage">Home</a></li>
+        			<li><a href="#songPage">Song List</a></li>
+        			<li><a href="#aboutPage">About</a></li>
+    			</ul>
+			</div><!-- /navbar -->
+			<div data-role="content" data-theme="a">
+				
+					<img src="assets/chrisPlay.jpg" alt="image of chris">
+			
+			</div>
+			<div data-theme="a" data-role="footer" data-position="fixed">
+        		<h3>
+            		Dust Mobile &copy; 2014
+        		</h3>
+    		</div>
+		</div>
+		<div data-role="page" data-theme="a" id="big">
+			<div data-role="header" data-position="inline">
+				<h1>Chris Whitley<br />Big Sky of Country</h1>
+			</div>
+			<div data-role="navbar">
+    			<ul>
+        			<li><a href="#homePage">Home</a></li>
+        			<li><a href="#songPage">Song List</a></li>
+        			<li><a href="#aboutPage">About</a></li>
+    			</ul>
+			</div><!-- /navbar -->
+			<div data-role="content" data-theme="a">
+				
+					<img src="assets/chrisPlay.jpg" alt="image of chris">
+			
+			</div>
+			<div data-theme="a" data-role="footer" data-position="fixed">
+        		<h3>
+            		Dust Mobile &copy; 2014
+        		</h3>
+    		</div>
+		</div>
+		<div data-role="page" data-theme="a" id="bli">
+			<div data-role="header" data-position="inline">
+				<h1>Chris Whitley<br />Bliss to Break</h1>
+			</div>
+			<div data-role="navbar">
+    			<ul>
+        			<li><a href="#homePage">Home</a></li>
+        			<li><a href="#songPage">Song List</a></li>
+        			<li><a href="#aboutPage">About</a></li>
+    			</ul>
+			</div><!-- /navbar -->
+			<div data-role="content" data-theme="a">
+				
+					<img src="assets/chrisPlay.jpg" alt="image of chris">
+			
+			</div>
+			<div data-theme="a" data-role="footer" data-position="fixed">
+        		<h3>
+            		Dust Mobile &copy; 2014
+        		</h3>
+    		</div>
+		</div>
+		<div data-role="page" data-theme="a" id="bor">
+			<div data-role="header" data-position="inline">
+				<h1>Chris Whitley<br />Border Town</h1>
+			</div>
+			<div data-role="navbar">
+    			<ul>
+        			<li><a href="#homePage">Home</a></li>
+        			<li><a href="#songPage">Song List</a></li>
+        			<li><a href="#aboutPage">About</a></li>
+    			</ul>
+			</div><!-- /navbar -->
+			<div data-role="content" data-theme="a">
+				
+					<img src="assets/chrisPlay.jpg" alt="image of chris">
+			
+			</div>
+			<div data-theme="a" data-role="footer" data-position="fixed">
+        		<h3>
+            		Dust Mobile &copy; 2014
+        		</h3>
+    		</div>
+		</div>
+		<div data-role="page" data-theme="a" id="can">
+			<div data-role="header" data-position="inline">
+				<h1>Chris Whitley<br />Can't Get Off</h1>
+			</div>
+			<div data-role="navbar">
+    			<ul>
+        			<li><a href="#homePage">Home</a></li>
+        			<li><a href="#songPage">Song List</a></li>
+        			<li><a href="#aboutPage">About</a></li>
+    			</ul>
+			</div><!-- /navbar -->
+			<div data-role="content" data-theme="a">
+				
+					<img src="assets/chrisPlay.jpg" alt="image of chris">
+			
+			</div>
+			<div data-theme="a" data-role="footer" data-position="fixed">
+        		<h3>
+            		Dust Mobile &copy; 2014
+        		</h3>
+    		</div>
+		</div>
+		<div data-role="page" data-theme="a" id="cle">
+			<div data-role="header" data-position="inline">
+				<h1>Chris Whitley<br />Clear Blue Sky</h1>
+			</div>
+			<div data-role="navbar">
+    			<ul>
+        			<li><a href="#homePage">Home</a></li>
+        			<li><a href="#songPage">Song List</a></li>
+        			<li><a href="#aboutPage">About</a></li>
+    			</ul>
+			</div><!-- /navbar -->
+			<div data-role="content" data-theme="a">
+				
+					<img src="assets/chrisPlay.jpg" alt="image of chris">
+			
+			</div>
+			<div data-theme="a" data-role="footer" data-position="fixed">
+        		<h3>
+            		Dust Mobile &copy; 2014
+        		</h3>
+    		</div>
+		</div>
+		<div data-role="page" data-theme="a" id="com">
+			<div data-role="header" data-position="inline">
+				<h1>Chris Whitley<br />Complex Sex Ritual</h1>
+			</div>
+			<div data-role="navbar">
+    			<ul>
+        			<li><a href="#homePage">Home</a></li>
+        			<li><a href="#songPage">Song List</a></li>
+        			<li><a href="#aboutPage">About</a></li>
+    			</ul>
+			</div><!-- /navbar -->
+			<div data-role="content" data-theme="a">
+				
+					<img src="assets/chrisPlay.jpg" alt="image of chris">
+			
+			</div>
+			<div data-theme="a" data-role="footer" data-position="fixed">
+        		<h3>
+            		Dust Mobile &copy; 2014
+        		</h3>
+    		</div>
+		</div>
+		<div data-role="page" data-theme="a" id="coo">
+			<div data-role="header" data-position="inline">
+				<h1>Chris Whitley<br />Cool Wooden Crosses</h1>
+			</div>
+			<div data-role="navbar">
+    			<ul>
+        			<li><a href="#homePage">Home</a></li>
+        			<li><a href="#songPage">Song List</a></li>
+        			<li><a href="#aboutPage">About</a></li>
+    			</ul>
+			</div><!-- /navbar -->
+			<div data-role="content" data-theme="a">
+				
+					<img src="assets/chrisPlay.jpg" alt="image of chris">
+			
+			</div>
+			<div data-theme="a" data-role="footer" data-position="fixed">
+        		<h3>
+            		Dust Mobile &copy; 2014
+        		</h3>
+    		</div>
+		</div>
+		<div data-role="page" data-theme="a" id="day">
+			<div data-role="header" data-position="inline">
+				<h1>Chris Whitley<br />Days of Obligation</h1>
+			</div>
+			<div data-role="navbar">
+    			<ul>
+        			<li><a href="#homePage">Home</a></li>
+        			<li><a href="#songPage">Song List</a></li>
+        			<li><a href="#aboutPage">About</a></li>
+    			</ul>
+			</div><!-- /navbar -->
+			<div data-role="content" data-theme="a">
+				
+					<img src="assets/chrisPlay.jpg" alt="image of chris">
+			
+			</div>
+			<div data-theme="a" data-role="footer" data-position="fixed">
+        		<h3>
+            		Dust Mobile &copy; 2014
+        		</h3>
+    		</div>
+		</div>
+		<div data-role="page" data-theme="a" id="die">
+			<div data-role="header" data-position="inline">
+				<h1>Chris Whitley<br />Die in Your</h1>
+			</div>
+			<div data-role="navbar">
+    			<ul>
+        			<li><a href="#homePage">Home</a></li>
+        			<li><a href="#songPage">Song List</a></li>
+        			<li><a href="#aboutPage">About</a></li>
+    			</ul>
+			</div><!-- /navbar -->
+			<div data-role="content" data-theme="a">
+				
+					<img src="assets/chrisPlay.jpg" alt="image of chris">
+			
+			</div>
+			<div data-theme="a" data-role="footer" data-position="fixed">
+        		<h3>
+            		Dust Mobile &copy; 2014
+        		</h3>
+    		</div>
+		</div>
+		<div data-role="page" data-theme="a" id="din">
+			<div data-role="header" data-position="inline">
+				<h1>Chris Whitley<br />Din</h1>
+			</div>
+			<div data-role="navbar">
+    			<ul>
+        			<li><a href="#homePage">Home</a></li>
+        			<li><a href="#songPage">Song List</a></li>
+        			<li><a href="#aboutPage">About</a></li>
+    			</ul>
+			</div><!-- /navbar -->
+			<div data-role="content" data-theme="a">
+				
+					<img src="assets/chrisPlay.jpg" alt="image of chris">
+			
+			</div>
+			<div data-theme="a" data-role="footer" data-position="fixed">
+        		<h3>
+            		Dust Mobile &copy; 2014
+        		</h3>
+    		</div>
+		</div>
+		<div data-role="page" data-theme="a" id="dir">
+			<div data-role="header" data-position="inline">
+				<h1>Chris Whitley<br />Dirt Floor</h1>
+			</div>
+			<div data-role="navbar">
+    			<ul>
+        			<li><a href="#homePage">Home</a></li>
+        			<li><a href="#songPage">Song List</a></li>
+        			<li><a href="#aboutPage">About</a></li>
+    			</ul>
+			</div><!-- /navbar -->
+			<div data-role="content" data-theme="a">
+				
+					<img src="assets/chrisPlay.jpg" alt="image of chris">
+			
+			</div>
+			<div data-theme="a" data-role="footer" data-position="fixed">
+        		<h3>
+            		Dust Mobile &copy; 2014
+        		</h3>
+    		</div>
+		</div>
+		<div data-role="page" data-theme="a" id="dus">
+			<div data-role="header" data-position="inline">
+				<h1>Chris Whitley<br />Dust Radio</h1>
+			</div>
+			<div data-role="navbar">
+    			<ul>
+        			<li><a href="#homePage">Home</a></li>
+        			<li><a href="#songPage">Song List</a></li>
+        			<li><a href="#aboutPage">About</a></li>
+    			</ul>
+			</div><!-- /navbar -->
+			<div data-role="content" data-theme="a">
+				
+					<img src="assets/chrisPlay.jpg" alt="image of chris">
+			
+			</div>
+			<div data-theme="a" data-role="footer" data-position="fixed">
+        		<h3>
+            		Dust Mobile &copy; 2014
+        		</h3>
+    		</div>
+		</div>
+		<div data-role="page" data-theme="a" id="fir">
+			<div data-role="header" data-position="inline">
+				<h1>Chris Whitley<br />Firefighter</h1>
+			</div>
+			<div data-role="navbar">
+    			<ul>
+        			<li><a href="#homePage">Home</a></li>
+        			<li><a href="#songPage">Song List</a></li>
+        			<li><a href="#aboutPage">About</a></li>
+    			</ul>
+			</div><!-- /navbar -->
+			<div data-role="content" data-theme="a">
+				
+					<img src="assets/chrisPlay.jpg" alt="image of chris">
+			
+			</div>
+			<div data-theme="a" data-role="footer" data-position="fixed">
+        		<h3>
+            		Dust Mobile &copy; 2014
+        		</h3>
+    		</div>
+		</div>
+		<div data-role="page" data-theme="a" id="fla">
+			<div data-role="header" data-position="inline">
+				<h1>Chris Whitley<br />Flat as the Earth 2</h1>
+			</div>
+			<div data-role="navbar">
+    			<ul>
+        			<li><a href="#homePage">Home</a></li>
+        			<li><a href="#songPage">Song List</a></li>
+        			<li><a href="#aboutPage">About</a></li>
+    			</ul>
+			</div><!-- /navbar -->
+			<div data-role="content" data-theme="a">
+				
+					<img src="assets/chrisPlay.jpg" alt="image of chris">
+			
+			</div>
+			<div data-theme="a" data-role="footer" data-position="fixed">
+        		<h3>
+            		Dust Mobile &copy; 2014
+        		</h3>
+    		</div>
+		</div>
+		<div data-role="page" data-theme="a" id="fro">
+			<div data-role="header" data-position="inline">
+				<h1>Chris Whitley<br />From One Island to Another</h1>
+			</div>
+			<div data-role="navbar">
+    			<ul>
+        			<li><a href="#homePage">Home</a></li>
+        			<li><a href="#songPage">Song List</a></li>
+        			<li><a href="#aboutPage">About</a></li>
+    			</ul>
+			</div><!-- /navbar -->
+			<div data-role="content" data-theme="a">
+				
+					<img src="assets/chrisPlay.jpg" alt="image of chris">
+			
+			</div>
+			<div data-theme="a" data-role="footer" data-position="fixed">
+        		<h3>
+            		Dust Mobile &copy; 2014
+        		</h3>
+    		</div>
+		</div>
+		<div data-role="page" data-theme="a" id="gas">
+			<div data-role="header" data-position="inline">
+				<h1>Chris Whitley<br />Gasket</h1>
+			</div>
+			<div data-role="navbar">
+    			<ul>
+        			<li><a href="#homePage">Home</a></li>
+        			<li><a href="#songPage">Song List</a></li>
+        			<li><a href="#aboutPage">About</a></li>
+    			</ul>
+			</div><!-- /navbar -->
+			<div data-role="content" data-theme="a">
+				
+					<img src="assets/chrisPlay.jpg" alt="image of chris">
+			
+			</div>
+			<div data-theme="a" data-role="footer" data-position="fixed">
+        		<h3>
+            		Dust Mobile &copy; 2014
+        		</h3>
+    		</div>
+		</div>
+		<div data-role="page" data-theme="a" id="god">
+			<div data-role="header" data-position="inline">
+				<h1>Chris Whitley<br />God Thing</h1>
+			</div>
+			<div data-role="navbar">
+    			<ul>
+        			<li><a href="#homePage">Home</a></li>
+        			<li><a href="#songPage">Song List</a></li>
+        			<li><a href="#aboutPage">About</a></li>
+    			</ul>
+			</div><!-- /navbar -->
+			<div data-role="content" data-theme="a">
+				
+					<img src="assets/chrisPlay.jpg" alt="image of chris">
+			
+			</div>
+			<div data-theme="a" data-role="footer" data-position="fixed">
+        		<h3>
+            		Dust Mobile &copy; 2014
+        		</h3>
+    		</div>
+		</div>
+		<div data-role="page" data-theme="a" id="gun">
+			<div data-role="header" data-position="inline">
+				<h1>Chris Whitley<br />Guns and Dolls</h1>
+			</div>
+			<div data-role="navbar">
+    			<ul>
+        			<li><a href="#homePage">Home</a></li>
+        			<li><a href="#songPage">Song List</a></li>
+        			<li><a href="#aboutPage">About</a></li>
+    			</ul>
+			</div><!-- /navbar -->
+			<div data-role="content" data-theme="a">
+				
+					<img src="assets/chrisPlay.jpg" alt="image of chris">
+			
+			</div>
+			<div data-theme="a" data-role="footer" data-position="fixed">
+        		<h3>
+            		Dust Mobile &copy; 2014
+        		</h3>
+    		</div>
+		</div>
+		<div data-role="page" data-theme="a" id="hom">
+			<div data-role="header" data-position="inline">
+				<h1>Chris Whitley<br />Home is Where You Get Across</h1>
+			</div>
+			<div data-role="navbar">
+    			<ul>
+        			<li><a href="#homePage">Home</a></li>
+        			<li><a href="#songPage">Song List</a></li>
+        			<li><a href="#aboutPage">About</a></li>
+    			</ul>
+			</div><!-- /navbar -->
+			<div data-role="content" data-theme="a">
+				
+					<img src="assets/chrisPlay.jpg" alt="image of chris">
+			
+			</div>
+			<div data-theme="a" data-role="footer" data-position="fixed">
+        		<h3>
+            		Dust Mobile &copy; 2014
+        		</h3>
+    		</div>
+		</div>
+		<div data-role="page" data-theme="a" id="ifo">
+			<div data-role="header" data-position="inline">
+				<h1>Chris Whitley<br />I Forget You Everyday</h1>
+			</div>
+			<div data-role="navbar">
+    			<ul>
+        			<li><a href="#homePage">Home</a></li>
+        			<li><a href="#songPage">Song List</a></li>
+        			<li><a href="#aboutPage">About</a></li>
+    			</ul>
+			</div><!-- /navbar -->
+			<div data-role="content" data-theme="a">
+				
+					<img src="assets/chrisPlay.jpg" alt="image of chris">
+			
+			</div>
+			<div data-theme="a" data-role="footer" data-position="fixed">
+        		<h3>
+            		Dust Mobile &copy; 2014
+        		</h3>
+    		</div>
+		</div>
+		<div data-role="page" data-theme="a" id="imm">
+			<div data-role="header" data-position="inline">
+				<h1>Chris Whitley<br />Immortal Blues</h1>
+			</div>
+			<div data-role="navbar">
+    			<ul>
+        			<li><a href="#homePage">Home</a></li>
+        			<li><a href="#songPage">Song List</a></li>
+        			<li><a href="#aboutPage">About</a></li>
+    			</ul>
+			</div><!-- /navbar -->
+			<div data-role="content" data-theme="a">
+				
+					<img src="assets/chrisPlay.jpg" alt="image of chris">
+			
+			</div>
+			<div data-theme="a" data-role="footer" data-position="fixed">
+        		<h3>
+            		Dust Mobile &copy; 2014
+        		</h3>
+    		</div>
+		</div>
+		<div data-role="page" data-theme="a" id="ind">
+			<div data-role="header" data-position="inline">
+				<h1>Chris Whitley<br />Indian Summer</h1>
+			</div>
+			<div data-role="navbar">
+    			<ul>
+        			<li><a href="#homePage">Home</a></li>
+        			<li><a href="#songPage">Song List</a></li>
+        			<li><a href="#aboutPage">About</a></li>
+    			</ul>
+			</div><!-- /navbar -->
+			<div data-role="content" data-theme="a">
+				
+					<img src="assets/chrisPlay.jpg" alt="image of chris">
+			
+			</div>
+			<div data-theme="a" data-role="footer" data-position="fixed">
+        		<h3>
+            		Dust Mobile &copy; 2014
+        		</h3>
+    		</div>
+		</div>
+		<div data-role="page" data-theme="a" id="kic">
+			<div data-role="header" data-position="inline">
+				<h1>Chris Whitley<br />kick the Stones</h1>
+			</div>
+			<div data-role="navbar">
+    			<ul>
+        			<li><a href="#homePage">Home</a></li>
+        			<li><a href="#songPage">Song List</a></li>
+        			<li><a href="#aboutPage">About</a></li>
+    			</ul>
+			</div><!-- /navbar -->
+			<div data-role="content" data-theme="a">
+				
+					<img src="assets/chrisPlay.jpg" alt="image of chris">
+			
+			</div>
+			<div data-theme="a" data-role="footer" data-position="fixed">
+        		<h3>
+            		Dust Mobile &copy; 2014
+        		</h3>
+    		</div>
+		</div>
+		<div data-role="page" data-theme="a" id="kno">
+			<div data-role="header" data-position="inline">
+				<h1>Chris Whitley<br />Know</h1>
+			</div>
+			<div data-role="navbar">
+    			<ul>
+        			<li><a href="#homePage">Home</a></li>
+        			<li><a href="#songPage">Song List</a></li>
+        			<li><a href="#aboutPage">About</a></li>
+    			</ul>
+			</div><!-- /navbar -->
+			<div data-role="content" data-theme="a">
+				
+					<img src="assets/chrisPlay.jpg" alt="image of chris">
+			
+			</div>
+			<div data-theme="a" data-role="footer" data-position="fixed">
+        		<h3>
+            		Dust Mobile &copy; 2014
+        		</h3>
+    		</div>
+		</div>
+		<div data-role="page" data-theme="a" id="lib">
+			<div data-role="header" data-position="inline">
+				<h1>Chris Whitley<br />Liberation</h1>
+			</div>
+			<div data-role="navbar">
+    			<ul>
+        			<li><a href="#homePage">Home</a></li>
+        			<li><a href="#songPage">Song List</a></li>
+        			<li><a href="#aboutPage">About</a></li>
+    			</ul>
+			</div><!-- /navbar -->
+			<div data-role="content" data-theme="a">
+				
+					<img src="assets/chrisPlay.jpg" alt="image of chris">
+			
+			</div>
+			<div data-theme="a" data-role="footer" data-position="fixed">
+        		<h3>
+            		Dust Mobile &copy; 2014
+        		</h3>
+    		</div>
+		</div>
+		<div data-role="page" data-theme="a" id="liv">
+			<div data-role="header" data-position="inline">
+				<h1>Chris Whitley<br />Living With the Law</h1>
+			</div>
+			<div data-role="navbar">
+    			<ul>
+        			<li><a href="#homePage">Home</a></li>
+        			<li><a href="#songPage">Song List</a></li>
+        			<li><a href="#aboutPage">About</a></li>
+    			</ul>
+			</div><!-- /navbar -->
+			<div data-role="content" data-theme="a">
+				
+					<img src="assets/chrisPlay.jpg" alt="image of chris">
+
+			</div>
+			<div data-theme="a" data-role="footer" data-position="fixed">
+        		<h3>
+            		Dust Mobile &copy; 2014
+        		</h3>
+    		</div>
+		</div>
+		<div data-role="page" data-theme="a" id="loc">
+			<div data-role="header" data-position="inline">
+				<h1>Chris Whitley<br />Loco Girl</h1>
+			</div>
+			<div data-role="navbar">
+    			<ul>
+        			<li><a href="#homePage">Home</a></li>
+        			<li><a href="#songPage">Song List</a></li>
+        			<li><a href="#aboutPage">About</a></li>
+    			</ul>
+			</div><!-- /navbar -->
+			<div data-role="content" data-theme="a">
+				
+					<img src="assets/chrisPlay.jpg" alt="image of chris">
+			
+			</div>
+			<div data-theme="a" data-role="footer" data-position="fixed">
+        		<h3>
+            		Dust Mobile &copy; 2014
+        		</h3>
+    		</div>
+		</div>
+		<div data-role="page" data-theme="a" id="lon">
+			<div data-role="header" data-position="inline">
+				<h1>Chris Whitley<br />Long Way Around</h1>
+			</div>
+			<div data-role="navbar">
+    			<ul>
+        			<li><a href="#homePage">Home</a></li>
+        			<li><a href="#songPage">Song List</a></li>
+        			<li><a href="#aboutPage">About</a></li>
+    			</ul>
+			</div><!-- /navbar -->
+			<div data-role="content" data-theme="a">
+				
+					<img src="assets/chrisPlay.jpg" alt="image of chris">
+			
+			</div>
+			<div data-theme="a" data-role="footer" data-position="fixed">
+        		<h3>
+            		Dust Mobile &copy; 2014
+        		</h3>
+    		</div>
+		</div>
+		<div data-role="page" data-theme="a" id="nar">
+			<div data-role="header" data-position="inline">
+				<h1>Chris Whitley<br />Narcotic Prayer</h1>
+			</div>
+			<div data-role="navbar">
+    			<ul>
+        			<li><a href="#homePage">Home</a></li>
+        			<li><a href="#songPage">Song List</a></li>
+        			<li><a href="#aboutPage">About</a></li>
+    			</ul>
+			</div><!-- /navbar -->
+			<div data-role="content" data-theme="a">
+				
+					<img src="assets/chrisPlay.jpg" alt="image of chris">
+			
+			</div>
+			<div data-theme="a" data-role="footer" data-position="fixed">
+        		<h3>
+            		Dust Mobile &copy; 2014
+        		</h3>
+    		</div>
+		</div>
+		<div data-role="page" data-theme="a" id="nev">
+			<div data-role="header" data-position="inline">
+				<h1>Chris Whitley<br />Never</h1>
+			</div>
+			<div data-role="navbar">
+    			<ul>
+        			<li><a href="#homePage">Home</a></li>
+        			<li><a href="#songPage">Song List</a></li>
+        			<li><a href="#aboutPage">About</a></li>
+    			</ul>
+			</div><!-- /navbar -->
+			<div data-role="content" data-theme="a">
+				
+					<img src="assets/chrisPlay.jpg" alt="image of chris">
+			
+			</div>
+			<div data-theme="a" data-role="footer" data-position="fixed">
+        		<h3>
+            		Dust Mobile &copy; 2014
+        		</h3>
+    		</div>
+		</div>
+		<div data-role="page" data-theme="a" id="new">
+			<div data-role="header" data-position="inline">
+				<h1>Chris Whitley<br />New Machine</h1>
+			</div>
+			<div data-role="navbar">
+    			<ul>
+        			<li><a href="#homePage">Home</a></li>
+        			<li><a href="#songPage">Song List</a></li>
+        			<li><a href="#aboutPage">About</a></li>
+    			</ul>
+			</div><!-- /navbar -->
+			<div data-role="content" data-theme="a">
+				
+					<img src="assets/chrisPlay.jpg" alt="image of chris">
+			
+			</div>
+			<div data-theme="a" data-role="footer" data-position="fixed">
+        		<h3>
+            		Dust Mobile &copy; 2014
+        		</h3>
+    		</div>
+		</div>
+		<div data-role="page" data-theme="a" id="ohg">
+			<div data-role="header" data-position="inline">
+				<h1>Chris Whitley<br />Oh God, My Heart is Ready</h1>
+			</div>
+			<div data-role="navbar">
+    			<ul>
+        			<li><a href="#homePage">Home</a></li>
+        			<li><a href="#songPage">Song List</a></li>
+        			<li><a href="#aboutPage">About</a></li>
+    			</ul>
+			</div><!-- /navbar -->
+			<div data-role="content" data-theme="a">
+				
+					<img src="assets/chrisPlay.jpg" alt="image of chris">
+			
+			</div>
+			<div data-theme="a" data-role="footer" data-position="fixed">
+        		<h3>
+            		Dust Mobile &copy; 2014
+        		</h3>
+    		</div>
+		</div>
+		<div data-role="page" data-theme="a" id="onc">
+			<div data-role="header" data-position="inline">
+				<h1>Chris Whitley<br />On Cue</h1>
+			</div>
+			<div data-role="navbar">
+    			<ul>
+        			<li><a href="#homePage">Home</a></li>
+        			<li><a href="#songPage">Song List</a></li>
+        			<li><a href="#aboutPage">About</a></li>
+    			</ul>
+			</div><!-- /navbar -->
+			<div data-role="content" data-theme="a">
+				
+					<img src="assets/chrisPlay.jpg" alt="image of chris">
+			
+			</div>
+			<div data-theme="a" data-role="footer" data-position="fixed">
+        		<h3>
+            		Dust Mobile &copy; 2014
+        		</h3>
+    		</div>
+		</div>
+		<div data-role="page" data-theme="a" id="one">
+			<div data-role="header" data-position="inline">
+				<h1>Chris Whitley<br />One Long Day</h1>
+			</div>
+			<div data-role="navbar">
+    			<ul>
+        			<li><a href="#homePage">Home</a></li>
+        			<li><a href="#songPage">Song List</a></li>
+        			<li><a href="#aboutPage">About</a></li>
+    			</ul>
+			</div><!-- /navbar -->
+			<div data-role="content" data-theme="a">
+				
+					<img src="assets/chrisPlay.jpg" alt="image of chris">
+			
+			</div>
+			<div data-theme="a" data-role="footer" data-position="fixed">
+        		<h3>
+            		Dust Mobile &copy; 2014
+        		</h3>
+    		</div>
+		</div>
+		<div data-role="page" data-theme="a" id="pho">
+			<div data-role="header" data-position="inline">
+				<h1>Chris Whitley<br />Phone Call From Leavenworth</h1>
+			</div>
+			<div data-role="navbar">
+    			<ul>
+        			<li><a href="#homePage">Home</a></li>
+        			<li><a href="#songPage">Song List</a></li>
+        			<li><a href="#aboutPage">About</a></li>
+    			</ul>
+			</div><!-- /navbar -->
+			<div data-role="content" data-theme="a">
+				
+					<img src="assets/chrisPlay.jpg" alt="image of chris">
+			
+			</div>
+			<div data-theme="a" data-role="footer" data-position="fixed">
+        		<h3>
+            		Dust Mobile &copy; 2014
+        		</h3>
+    		</div>
+		</div>
+		<div data-role="page" data-theme="a" id="poi">
+			<div data-role="header" data-position="inline">
+				<h1>Chris Whitley<br />Poison Girl</h1>
+			</div>
+			<div data-role="navbar">
+    			<ul>
+        			<li><a href="#homePage">Home</a></li>
+        			<li><a href="#songPage">Song List</a></li>
+        			<li><a href="#aboutPage">About</a></li>
+    			</ul>
+			</div><!-- /navbar -->
+			<div data-role="content" data-theme="a">
+				
+					<img src="assets/chrisPlay.jpg" alt="image of chris">
+			
+			</div>
+			<div data-theme="a" data-role="footer" data-position="fixed">
+        		<h3>
+            		Dust Mobile &copy; 2014
+        		</h3>
+    		</div>
+		</div>
+		<div data-role="page" data-theme="a" id="pow">
+			<div data-role="header" data-position="inline">
+				<h1>Chris Whitley<br />Power Down</h1>
+			</div>
+			<div data-role="navbar">
+    			<ul>
+        			<li><a href="#homePage">Home</a></li>
+        			<li><a href="#songPage">Song List</a></li>
+        			<li><a href="#aboutPage">About</a></li>
+    			</ul>
+			</div><!-- /navbar -->
+			<div data-role="content" data-theme="a">
+				
+					<img src="assets/chrisPlay.jpg" alt="image of chris">
+			
+			</div>
+			<div data-theme="a" data-role="footer" data-position="fixed">
+        		<h3>
+            		Dust Mobile &copy; 2014
+        		</h3>
+    		</div>
+		</div>
+		<div data-role="page" data-theme="a" id="scr">
+			<div data-role="header" data-position="inline">
+				<h1>Chris Whitley<br />Scrapyard Lullaby</h1>
+			</div>
+			<div data-role="navbar">
+    			<ul>
+        			<li><a href="#homePage">Home</a></li>
+        			<li><a href="#songPage">Song List</a></li>
+        			<li><a href="#aboutPage">About</a></li>
+    			</ul>
+			</div><!-- /navbar -->
+			<div data-role="content" data-theme="a">
+				
+					<img src="assets/chrisPlay.jpg" alt="image of chris">
+			
+			</div>
+			<div data-theme="a" data-role="footer" data-position="fixed">
+        		<h3>
+            		Dust Mobile &copy; 2014
+        		</h3>
+    		</div>
+		</div>
+		<div data-role="page" data-theme="a" id="ser">
+			<div data-role="header" data-position="inline">
+				<h1>Chris Whitley<br />Serve You</h1>
+			</div>
+			<div data-role="navbar">
+    			<ul>
+        			<li><a href="#homePage">Home</a></li>
+        			<li><a href="#songPage">Song List</a></li>
+        			<li><a href="#aboutPage">About</a></li>
+    			</ul>
+			</div><!-- /navbar -->
+			<div data-role="content" data-theme="a">
+				
+					<img src="assets/chrisPlay.jpg" alt="image of chris">
+			
+			</div>
+			<div data-theme="a" data-role="footer" data-position="fixed">
+        		<h3>
+            		Dust Mobile &copy; 2014
+        		</h3>
+    		</div>
+		</div>
+		<div data-role="page" data-theme="a" id="som">
+			<div data-role="header" data-position="inline">
+				<h1>Chris Whitley<br />Some Candy Talking</h1>
+			</div>
+			<div data-role="navbar">
+    			<ul>
+        			<li><a href="#homePage">Home</a></li>
+        			<li><a href="#songPage">Song List</a></li>
+        			<li><a href="#aboutPage">About</a></li>
+    			</ul>
+			</div><!-- /navbar -->
+			<div data-role="content" data-theme="a">
+				
+					<img src="assets/chrisPlay.jpg" alt="image of chris">
+			
+			</div>
+			<div data-theme="a" data-role="footer" data-position="fixed">
+        		<h3>
+            		Dust Mobile &copy; 2014
+        		</h3>
+    		</div>
+		</div>
+		<div data-role="page" data-theme="a" id="ult">
+			<div data-role="header" data-position="inline">
+				<h1>Chris Whitley<br />Ultraglide</h1>
+			</div>
+			<div data-role="navbar">
+    			<ul>
+        			<li><a href="#homePage">Home</a></li>
+        			<li><a href="#songPage">Song List</a></li>
+        			<li><a href="#aboutPage">About</a></li>
+    			</ul>
+			</div><!-- /navbar -->
+			<div data-role="content" data-theme="a">
+				
+					<img src="assets/chrisPlay.jpg" alt="image of chris">
+			
+			</div>
+			<div data-theme="a" data-role="footer" data-position="fixed">
+        		<h3>
+            		Dust Mobile &copy; 2014
+        		</h3>
+    		</div>
+		</div>
+		<div data-role="page" data-theme="a" id="wei">
+			<div data-role="header" data-position="inline">
+				<h1>Chris Whitley<br />Weightless</h1>
+			</div>
+			<div data-role="navbar">
+    			<ul>
+        			<li><a href="#homePage">Home</a></li>
+        			<li><a href="#songPage">Song List</a></li>
+        			<li><a href="#aboutPage">About</a></li>
+    			</ul>
+			</div><!-- /navbar -->
+			<div data-role="content" data-theme="a">
+				
+					<img src="assets/chrisPlay.jpg" alt="image of chris">
+			
+			</div>
+			<div data-theme="a" data-role="footer" data-position="fixed">
+        		<h3>
+            		Dust Mobile &copy; 2014
+        		</h3>
+    		</div>
+		</div>
+		<div data-role="page" data-theme="a" id="wil">
+			<div data-role="header" data-position="inline">
+				<h1>Chris Whitley<br />Wild Country</h1>
+			</div>
+			<div data-role="navbar">
+    			<ul>
+        			<li><a href="#homePage">Home</a></li>
+        			<li><a href="#songPage">Song List</a></li>
+        			<li><a href="#aboutPage">About</a></li>
+    			</ul>
+			</div><!-- /navbar -->
+			<div data-role="content" data-theme="a">
+				
+					<img src="assets/chrisPlay.jpg" alt="image of chris">
+			
+			</div>
+			<div data-theme="a" data-role="footer" data-position="fixed">
+        		<h3>
+            		Dust Mobile &copy; 2014
+        		</h3>
+    		</div>
+		</div>
+		<div data-role="page" data-theme="a" id="wpl">
+			<div data-role="header" data-position="inline">
+				<h1>Chris Whitley<br />WPL (Wild Pagan Love)</h1>
+			</div>
+			<div data-role="navbar">
+    			<ul>
+        			<li><a href="#homePage">Home</a></li>
+        			<li><a href="#songPage">Song List</a></li>
+        			<li><a href="#aboutPage">About</a></li>
+    			</ul>
+			</div><!-- /navbar -->
+			<div data-role="content" data-theme="a">
+				
+					<img src="assets/chrisPlay.jpg" alt="image of chris">
+			
+			</div>
+			<div data-theme="a" data-role="footer" data-position="fixed">
+        		<h3>
+            		Dust Mobile &copy; 2014
+        		</h3>
+    		</div>
+		</div>
+		<script type="text/javascript" src= "js/script.js"></script>
+		<!--<script type="text/javascript" src= "js/freq.js"></script>-->
+	</body>
+</html>
